@@ -1,0 +1,328 @@
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: 'COCOGOOSE', Arial, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  overflow: scroll;
+}
+
+:root {
+  --primary: #d3d3d3;
+  --secondary: #ec5242;
+  --text-color: #272a31;
+  --background: rgba(230, 230, 230, 0.479);
+}
+
+.nav--menu,
+.logo {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 24px;
+  background: none;
+}
+
+.nav-humburger {
+  font-size: 30px;
+}
+
+.home--section {
+  padding: 24px;
+  justify-content: center;
+  background-color: var(--primary);
+  background-image: linear-gradient(rgba(233, 233, 233, 0.87), rgb(235, 235, 235)), url(/assets/backgrd/home-mobile.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main--title h2 {
+  margin-top: 80px;
+  font-size: 40px;
+  color: var(--secondary);
+  line-height: 52px;
+  font-weight: 500;
+}
+
+.main--title h1 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 800;
+  background-image: url(/assets/backgrd/font.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  text-align: left;
+  justify-content: center;
+  background-color: #e9e8e8;
+  border: 3px solid #fff;
+}
+
+.description h3 {
+  padding: 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 30px;
+}
+
+.time--section h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.time--section p,
+.footer p {
+  color: rgb(87, 86, 86);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.work--section {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  margin: 0;
+  background-color: rgb(39, 42, 50, 0.993);
+  background-repeat: repeat;
+  background-image: url(/assets/backgrd/main-program-bg.png);
+}
+
+.work--section h2,
+.client--section h2 {
+  color: #d3d3d3;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.work--section h2::after,
+.client--section h2::after {
+  content: ' ';
+  margin: 20px auto;
+  width: 45px;
+  display: block;
+  border: 2px solid  var(--secondary);
+}
+
+.card--container,
+.feature--container {
+  display: grid;
+  grid-gap: 12px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  text-align: left;
+  justify-self: center;
+  justify-content: space-around;
+  margin: 0;
+  gap: 10px;
+  padding: 8px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.061);
+}
+
+.card-img {
+  width: 50%;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  color: var(--secondary);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card p {
+  color: #d3d3d3;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.join--btn button {
+  width: 90%;
+  margin: 40px auto;
+  height: 60px;
+  background: var(--secondary);
+  border: none;
+  color: #d3d3d3;
+  font-size: 24px;
+}
+
+.feature--section {
+  margin: 0;
+  text-align: center;
+  background: var(--background);
+}
+
+.feature--section h2 {
+  margin: 0;
+  padding: 24px;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.feature--section h2::after {
+  content: ' ';
+  margin: 20px auto;
+  width: 50px;
+  display: block;
+  border: 2px solid  var(--secondary);
+}
+
+.feature {
+  display: flex;
+  padding: 0 20px;
+  gap: 16px;
+  align-items: flex-start;
+  text-align: left;
+  justify-self: center;
+  justify-content: center;
+}
+
+.feature--img {
+  width: 100%;
+  height: auto;
+}
+
+.feature--img img {
+  width: 100%;
+}
+
+.side-div h3,
+h4,
+.side-div p {
+  padding: 5px;
+  margin: 0;
+}
+
+.side-div h3 {
+  color: var(--text-color);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.side-div h4 {
+  color: var(--secondary);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.side-div p {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.arrow--btn {
+  padding: 24px;
+}
+
+.arrow--btn button {
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  padding: 12px;
+  justify-content: center;
+  height: 60px;
+  background: var(--background);
+  color: var(--text-color);
+  font-size: 24px;
+  border: 1px solid rgb(187, 186, 186);
+}
+
+.show--more {
+  display: flex;
+  gap: 10px;
+}
+
+.show--more i {
+  color: var(--secondary);
+}
+
+.client--section {
+  background-color: rgb(56, 55, 55);
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.client--section h2 {
+  padding-top: 30px;
+  margin: 0;
+}
+
+.client--container {
+  display: flex;
+  padding: 30px 12px;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 70px; 
+  text-align: center;
+  justify-content: center;
+}
+
+.client {
+  width: 50%;
+  height: 70px;
+}
+
+.client img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  padding: 24px;
+  background: #fff;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer img {
+  width: 60px;
+}
