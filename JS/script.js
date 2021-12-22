@@ -1,33 +1,32 @@
-const navOverlay = document.querySelector('.nav-overlay');
-const navHumburger = document.querySelector('.nav-humburger');
-const xIcon = document.querySelector('.xicon-image');
-const overlayNav = document.querySelectorAll('.overlay-link');
+// const navOverlay = document.querySelector('.nav-overlay');
+// const navHumburger = document.querySelector('.nav-humburger');
+// const xIcon = document.querySelector('.xicon-image');
+// const overlayNav = document.querySelectorAll('.overlay-link');
 
-function displayOn() {
-  navOverlay.classList.remove('off-display');
-  document.body.classList.add('scroll');
-}
+// function displayOn() {
+//   navOverlay.classList.remove('off-display');
+//   document.body.classList.add('scroll');
+// }
 
-function displayOff() {
-  navOverlay.classList.add('off-display');
-  document.body.classList.remove('scroll');
-  for (let j = 0; j < overlayNav.length; j += 1) {
-    overlayNav[j].addEventListener('click', displayOff);
-  }
-}
+// function displayOff() {
+//   navOverlay.classList.add('off-display');
+//   document.body.classList.remove('scroll');
+//   for (let j = 0; j < overlayNav.length; j += 1) {
+//     overlayNav[j].addEventListener('click', displayOff);
+//   }
+// }
 
-navHumburger.addEventListener('click', displayOn);
-xIcon.addEventListener('click', displayOff);
-overlayNav.addEventListener('click', displayOff);
+// navHumburger.addEventListener('click', displayOn);
+// xIcon.addEventListener('click', displayOff);
+// overlayNav.addEventListener('click', displayOff);
 
 // creat pag=e dynamically
 
-const Html = document.getElementsByTagName('html')[0];
-const Speakers = document.querySelector('.feature--container');
+const Speaker = document.querySelector('.feature--container');
 
 const projects = [
   {
-    id: 'project_1',
+    id: 'member1',
     images: {
       img: 'assets/backgrd/member1.png',
       altText: 'member 1',
@@ -69,7 +68,7 @@ const projects = [
   {
     id: 'project_4',
     images: {
-      img: 'assets/backgrd/member5.png',
+      img: '/assets/backgrd/member5.png',
       altText: 'member 5',
     },
     name: 'Julias Eduard',
@@ -85,6 +84,26 @@ const projects = [
     name: 'David Beket',
     heading: 'Founder and CEO of Crisp Company',
     description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.'
-  }]
-  
-  
+}];
+
+function createSpreaker(Speakerobject) {
+  const li = document.createElement('li');
+  li.className = 'feature';
+  li.innerHTML = 
+  `<div class="feature--img hidden">
+    <img src="${Speakerobject.images.img}" alt="${Speakerobject.images.altText}">
+  </div>
+  <div class="side-div">
+    <h3>${Speakerobject.name}</h3>
+    <h4>${Speakerobject.heading}</h4>
+    <p>${Speakerobject.description}</p>
+  </div>`;
+
+  return li;
+}
+
+projects.forEach((object) => {
+  const Card = createSpreaker(object);
+  Speaker.appendChild(Card);
+});
+
