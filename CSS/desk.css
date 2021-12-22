@@ -24,8 +24,7 @@
 
   .header {
     display: flex;
-    background:none;
-    /* box-shadow: 0 48px 48px rgba(209, 160, 128, 0.08); */
+    background: none;
     justify-content: space-evenly;
     text-align: center;
     padding: 0;
@@ -77,16 +76,19 @@
     height: 100%;
   }
 
-  .home--section {
+  .home--section,
+  .about--section {
     padding: 50px 150px;
   }
 
-  .main--title h2 {
+  .main--title h2,
+  .main--header h2 {
     padding-top: 30px;
     font-size: 48px;
   }
 
-  .main--title h1 {
+  .main--title h1,
+  .main--header h1 {
     font-size: 60px;
     line-height: 78px;
   }
@@ -193,4 +195,47 @@
     margin: 0;
   }
 
+  /* About styling */
+
+  .about--description h3 {
+    font-weight: 600;
+  }
+
+  .info {
+    padding-bottom: 40px;
+  }
+
+  .info2 h2,
+  .careers--section h2 {
+    font-size: 28px;
+  }
+
+  .info2 h3 {
+    width: 45%;
+  }
+
+  .main--logo {
+    width: 30%;
+  }
+
+  .main--logo img {
+    width: 70%;
+  }
+
+  .careers--container {
+    flex-direction: row;
+    padding: 50px;
+    width: 50%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .careers {
+    width: 100%;
+  }
+
+  .careers .div:hover {
+    transition: all ease-in-out 2s;
+    display: none;
+  }
 }
