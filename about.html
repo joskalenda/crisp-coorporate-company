@@ -4,25 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>  
   <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/desk.css">
   <title>About Crisp</title>
 </head>
 <body>
   <header class="header">
     <a href="" class="logo">
-      <img class="logo--img" src="./assets/icons/crisp3png" alt="">
+      <img class="logo--img" src="./assets/icons/crisp3-removebg-preview.png" alt="">
     </a>
     <nav class="nav--menu">
       <ul class="nav--link">
-        <li class="nav--items"><a href="about.html">About Us</a></li>
-        <li class="nav--items"><a href="">Home</a></li>
-        <li class="nav--items"><a href="">Careers</a></li>
+        <li class="nav--items light"><a href="about.html">About Us</a></li>
+        <li class="nav--items"><a href="index.html">Home</a></li>
+        <li class="nav--items"><a href="#hire">Careers</a></li>
         <li class="nav--items"><a href="">Resources</a></li>
-        <li class="nav--items Active"><a href="">Crisp</a></li>
+        <li class="nav--items"><a href="">Sign up</a></li>
       </ul>
     </nav>
     <span  class= "nav-humburger" id="humburger"><i class="fa humburger fa-bars"></i></span>
   </header>
+ 
   <main class="main">
     <section class="about--section">
       <div class="main--header">
@@ -39,19 +42,35 @@
         <h3>risp needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at anytime.</h3>
         <a href="#">crisptech@ca.gmail.com</a>
       </div>
-      <h2>Software and Product Developement Services</h2>
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis repudiandae libero quo beatae voluptates nulla sunt deleniti, doloremque sapiente!</h3>
+      <div class="info2">
+        <h2>Software and Product Developement Services</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis repudiandae libero quo beatae voluptates nulla sunt deleniti, doloremque sapiente!</h3>
+      </div>
       <div class="main--logo">
         <img src="/assets/icons/crisp3png" alt="logo">
       </div>
+      <p class="line"></p>
     </section>
 
-    <section class="careers">
+    <section id="hire" class="careers--section">
       <h2>Carees at Crisp</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi repudiandae sed error iste voluptates magni nam laborum enim deserunt.</p>
-      <ul>
-        <li></li>
-        <li></li>
+      <ul class="careers--container">
+        <li class="careers">
+          <img src="/assets/backgrd/picture1.jpg" alt="">
+          <div class="div">
+            <p>Team Work</p>
+            <span class="cover--color"></span>
+          </div>
+        </li>
+
+        <li class="careers">
+          <img src="/assets/backgrd/picture2.jpeg" alt="">
+          <div class="div">
+            <p>Soft Skills</p>
+            <span class="cover--color"></span>
+          </div>
+        </li>
       </ul>
     </section>
     <section class="client--section">
@@ -76,5 +95,17 @@
     <img src="assets/icons/crisp3png" alt="logo page">
     <p>© 2021. Crisp Thinking Group Limited. All Rights Reserved.</p>
   </footer>
+  <div class="nav-overlay off-display">
+    <div class="nav-mobile-container">
+      <div class="xicon-image"><img src="/assets/icons/X.svg" alt="Exit Icon"></div>
+      <ul class="overlay-menu d-flex">
+        <li class="overlay-link"><a href="">Referals</a></li>
+        <li class="overlay-link"><a href="">Home </a></li>
+        <li class="overlay-link"><a href="">Techical Supports</a></li>
+        <li class="overlay-link"><a href="">Appointement</a></li>
+        <li class="overlay-link Active"><a href="">About Us</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
