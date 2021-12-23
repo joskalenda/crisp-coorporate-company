@@ -22,11 +22,22 @@
     display: none;
   }
 
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   .header {
     display: flex;
-    background: none;
+    background: rgb(226, 224, 224);
     justify-content: space-evenly;
     text-align: center;
+    animation: 1s ease-out 0s 1 slideInLeft;
     padding: 0;
     height: auto;
     margin: 0;
@@ -100,6 +111,7 @@
   .card--container {
     display: flex;
     text-align: center;
+    animation: 1s ease-out 0s 1 slideInLeft;
     margin: 0 auto;
     padding: 30px;
   }
@@ -228,6 +240,7 @@
     width: 50%;
     margin: 0 auto;
     gap: 20px;
+    animation: 1s ease-out 0s 1 slideInLeft;
   }
 
   .careers {
@@ -235,7 +248,7 @@
   }
 
   .careers .div:hover {
-    transition: all ease-in-out 2s;
+    transition: all 1s;
     display: none;
   }
 }

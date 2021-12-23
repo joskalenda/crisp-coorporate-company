@@ -6,20 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>  
   <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="/CSS/desk.css">
   <title>Crisp company</title>
 </head>
 <body>
   <header class="header">
     <a href="" class="logo">
-      <img class="logo--img" src="./assets/icons/crisp3png" alt="">
+      <img class="logo--img" src="./assets/icons/crisp3-removebg-preview.png" alt="">
     </a>
     <nav class="nav--menu">
       <ul class="nav--link">
         <li class="nav--items"><a href="about.html">About Us</a></li>
-        <li class="nav--items"><a href="">Home</a></li>
-        <li class="nav--items"><a href="">Careers</a></li>
+        <li class="nav--items light"><a href="index.html">Home</a></li>
+        <li class="nav--items"><a href="#Approch">Our Approch</a></li>
         <li class="nav--items"><a href="">Resources</a></li>
-        <li class="nav--items Active"><a href="">Crisp</a></li>
+        <li class="nav--items "><a href="">Contact Us</a></li>
       </ul>
     </nav>
     <span  class= "nav-humburger" id="humburger"><i class="fa humburger fa-bars"></i></span>
@@ -42,7 +43,7 @@
       </div>
     </section>
 
-    <section class="work--section">
+    <section id="Approch" class="work--section">
       <h2>Our Approach</h2>
       <ul class="card--container">
         <li class="card">
@@ -66,7 +67,7 @@
             <img src="assets/icons/global.png" alt="image icon">
           </div>
           <h3>Regional intelligence</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus.</p>
         </li>
         <li class="card">
           <div class="card-img">
@@ -86,76 +87,14 @@
       <div class="join--btn">
         <button type="button" class="btn">Join Intelligence community</button>
       </div>
+      <div class="see--div">
+        <a href="" class="see--a">SEE THE WOLE PROGRAM</a>
+      </div>
     </section>
 
-    <section class="feature--section">
+    <section id="Event" class="feature--section">
       <h2>Feature Speakers</h2>
       <ul class="feature--container">
-        <li class="feature">
-          <div class="feature--img">
-            <img src="assets/backgrd/member1.png" alt="founder of company">
-          </div>
-          <div class="side-div">
-            <h3>Yochai Benkler</h3>
-            <h4>Founder and CEO of Crisp Company</h4>
-            <p>Crisp has been an incredible and invaluable part of our team and really protected our users.</p>
-          </div>
-        </li>
-
-        <li class="feature">
-          <div class="feature--img">
-            <img src="assets/backgrd/member2.png" alt="founder of company">
-          </div>
-          <div class="side-div">
-            <h3>Rachid Hamas</h3>
-            <h4>Founder and CEO of Crisp Company</h4>
-            <p>Crisp has been an incredible and invaluable part of our team and really protected our users.</p>
-          </div>
-        </li>
-
-        <li class="feature hidden">
-          <div class="feature--img hidden">
-            <img src="assets/backgrd/member3.png" alt="founder od the company">
-          </div>
-          <div class="side-div">
-            <h3>Francis Clinton</h3>
-            <h4>Founder and CEO of Crisp Company</h4>
-            <p>Crisp has been an incredible and invaluable part of our team and really protected our users.</p>
-          </div>
-        </li>
-
-        <li class="feature hidden">
-          <div class="feature--img">
-            <img src="assets/backgrd/member4.png" alt="founder of the company">
-          </div>
-          <div class="side-div">
-            <h3>Rubben Karis</h3>
-            <h4>Founder and CEO of Crisp Company</h4>
-            <p>Crisp has been an incredible and invaluable part of our team and really protected our users.</p>
-          </div>
-        </li>
-
-        <li class="feature hidden">
-          <div class="feature--img">
-            <img src="assets/backgrd/member5.png" alt="founder of the company">
-          </div>
-          <div class="side-div">
-            <h3>Yochai Benkler</h3>
-            <h4>Founder and CEO of Crisp Company</h4>
-            <p>Crisp has been an incredible and invaluable part of our team and really protected our users.</p>
-          </div>
-        </li>
-        
-        <li class="feature hiden">
-          <div class="feature--img">
-            <img src="assets/backgrd/member6.png" alt="founder of the company">
-          </div>
-          <div class="side-div">
-            <h3>Yochai Benkler</h3>
-            <h4>Founder and CEO of Crisp Company</h4>
-            <p>Crisp has been an incredible and invaluable part of our team and really protected our users.</p>
-          </div>
-        </li>
       </ul>
       <div class="arrow--btn">
         <button type="button" class="show--more"><span id="more">MORE</span><i class="fa fa-chevron-down"></i></button>
@@ -181,9 +120,22 @@
   </main>
 
   <footer class="footer">
-      <img src="assets/icons/crisp3png" alt="logo page">
+      <img src="assets/icons/crisp3-removebg-preview.png" alt="logo page">
       <p>© 2021. Crisp Thinking Group Limited. All Rights Reserved.</p>
   </footer>
-  
+  <div class="nav-overlay off-display">
+    <div class="nav-mobile-container">
+      <div class="xicon-image"><img src="/assets/icons/X.svg" alt="Exit Icon"></div>
+      <ul class="overlay-menu d-flex">
+        <li class="overlay-link"><a href="">Referals</a></li>
+        <li class="overlay-link"><a href="">About Us</a></li>
+        <li class="overlay-link"><a href="">Techical Supports</a></li>
+        <li class="overlay-link"><a href="">Appointement</a></li>
+        <li class="overlay-link Active"><a href="">Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="/JS/script.js"></script>
+  <script src="/JS/menu.js"></script>
 </body>
 </html>
