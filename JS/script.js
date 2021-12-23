@@ -19,5 +19,3 @@ function displayOff() {
 navHumburger.addEventListener('click', displayOn);
 xIcon.addEventListener('click', displayOff);
 overlayNav.addEventListener('click', displayOff);
-
-

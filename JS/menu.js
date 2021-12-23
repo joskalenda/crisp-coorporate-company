@@ -9,7 +9,7 @@ const projects = [
     },
     name: 'Yochai Benkler',
     heading: 'Founder and CEO of Crisp Company',
-    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.'
+    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.',
   },
   {
     id: 'project_2',
@@ -19,7 +19,7 @@ const projects = [
     },
     name: 'Rachid Hammas',
     heading: 'Founder and CEO of Crisp Company',
-    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.'
+    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.',
   },
   {
     id: 'project_3',
@@ -29,7 +29,7 @@ const projects = [
     },
     name: 'Petter Benkler',
     heading: 'Founder and CEO of Crisp Company',
-    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.'
+    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.',
   },
   {
     id: 'project_4',
@@ -39,7 +39,7 @@ const projects = [
     },
     name: 'Karis Yoga',
     heading: 'Founder and CEO of Crisp Company',
-    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.'
+    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.',
   },
   {
     id: 'project_4',
@@ -49,7 +49,7 @@ const projects = [
     },
     name: 'Julias Eduard',
     heading: 'Founder and CEO of Crisp Company',
-    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.'
+    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.',
   },
   {
     id: 'project_6',
@@ -59,14 +59,14 @@ const projects = [
     },
     name: 'David Beket',
     heading: 'Founder and CEO of Crisp Company',
-    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.'
-}];
+    description: 'Crisp has been an incredible and invaluable part of our team and really protected our users.',
+  },
+];
 
 function createSpreaker(Speakerobject) {
   const li = document.createElement('li');
   li.className = 'feature';
-  li.innerHTML = 
-  `<div class="feature--img hidden">
+  li.innerHTML = `<div class="feature--img hidden">
     <img src="${Speakerobject.images.img}" alt="${Speakerobject.images.altText}">
   </div>
   <div class="side-div">
@@ -122,11 +122,11 @@ Button.addEventListener('click', Read);
 
 const header = document.querySelector('.header');
 
-window.onscroll = function(){
-  let top = window.scrollY;
-  if (top >= 100){
+window.onscroll = function () {
+  const top = window.scrollY;
+  if (top >= 100) {
     header.classList.add('active');
-  }else{
+  } else {
     header.classList.remove('active');
   }
-}
+};
