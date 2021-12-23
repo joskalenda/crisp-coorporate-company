@@ -34,6 +34,7 @@
 
   .header {
     display: flex;
+    top: 33px;
     background: rgb(226, 224, 224);
     justify-content: space-evenly;
     text-align: center;
@@ -41,6 +42,41 @@
     padding: 0;
     height: auto;
     margin: 0;
+  }
+
+  .flex-center {
+    align-items: center;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  header .social_media ul {
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 0 8%;
+  }
+
+  header .social_media ul li {
+    padding: 3px;
+    color: var(--primary);
+  }
+
+  header .social_media ul li a {
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--primary);
+  }
+
+  .social_media {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: var(--text-color);
   }
 
   .nav--menu {
@@ -55,7 +91,7 @@
     gap: 24px;
   }
 
-  .nav--menu ul li a {
+  header .nav--menu ul li a {
     font-weight: normal;
     color: var(--text-color);
     font-size: 16px;
@@ -94,7 +130,7 @@
 
   .main--title h2,
   .main--header h2 {
-    padding-top: 30px;
+    padding-top: 90px;
     font-size: 48px;
   }
 
@@ -129,24 +165,27 @@
     border: 2px solid #fff;
   }
 
-  .card-img {
-    width: 100%;
-    margin: 0;
+  .card-img img {
+    width: 90%;
+    height: auto;
     padding: 12px;
   }
 
-  .card-img img {
-    width: 35%;
-    height: 90%;
-    padding: 0;
+  .card h3 {
+    width: auto;
+    padding: 5px;
+    margin: 0;
   }
 
-  .card h3 {
-    padding: 0;
+  .card p {
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
     margin: 0;
   }
 
   .see--div {
+    display: block;
     padding: 50px;
   }
 

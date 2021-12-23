@@ -37,7 +37,7 @@ Our experts gather intelligence "from the outside in" across the surface, deep a
 
 ## Loom Video
 
-[Loom Video Link]()
+[Loom Video Link](https://www.loom.com/share/3efaa026e9e14f85bbb6f270dbf22980)
 
 ## Getting Started
 
