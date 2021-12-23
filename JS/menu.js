@@ -82,3 +82,38 @@ projects.forEach((object) => {
   const Card = createSpreaker(object);
   Speaker.appendChild(Card);
 });
+
+const Lists = document.querySelectorAll('#Event .feature--container li');
+const Button = document.querySelector('.show--more');
+const Icon = document.querySelector('.show--more i');
+const Span = document.querySelector('#more');
+const ArrowUp = ('fa', 'fa-chevron-up');
+const ArrowDn = ('fa', 'fa-chevron-down');
+let value = 0;
+
+function Read() {
+  if (!value) {
+    Lists.forEach((itmes) => {
+      itmes.style.display = 'flex';
+    });
+    Span.textContent = 'LESS';
+    Icon.classList.remove(ArrowDn);
+    Icon.classList.add(ArrowUp);
+
+    value = 1;
+  } else {
+    Lists.forEach((itmes) => {
+      itmes.style.display = 'none';
+    });
+    Lists[0].style.display = 'flex';
+    Lists[1].style.display = 'flex';
+
+    Span.textContent = 'MORE';
+    Icon.classList.remove(ArrowUp);
+    Icon.classList.add(ArrowDn);
+
+    value = 0;
+  }
+}
+
+Button.addEventListener('click', Read);
