@@ -33,7 +33,7 @@ Our experts gather intelligence "from the outside in" across the surface, deep a
 
 ## Live Demo
 
-[Live Demo Link](https://joskalenda.github.io/capstone_project_one/)
+[Live Demo Link](https://trusting-mestorf-b9010d.netlify.app/)
 
 ## Loom Video
 
