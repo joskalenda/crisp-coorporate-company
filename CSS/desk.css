@@ -1,0 +1,293 @@
+@media (min-width: 992px) {
+  *,
+  ::before,
+  *::after {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  html {
+    overflow-y: scroll;
+  }
+
+  :root {
+    --primary: #d3d3d3;
+    --secondary: #ec5242;
+    --text-color: #272a31;
+    --background: rgba(230, 230, 230, 0.479);
+  }
+
+  .nav-humburger,
+  .join--btn button {
+    display: none;
+  }
+
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .header {
+    display: flex;
+    top: 33px;
+    background: rgb(226, 224, 224);
+    justify-content: space-evenly;
+    text-align: center;
+    animation: 1s ease-out 0s 1 slideInLeft;
+    padding: 0;
+    height: auto;
+    margin: 0;
+  }
+
+  .flex-center {
+    align-items: center;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  header .social_media ul {
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 0 8%;
+  }
+
+  header .social_media ul li {
+    padding: 3px;
+    color: var(--primary);
+  }
+
+  header .social_media ul li a {
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--primary);
+  }
+
+  .social_media {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: var(--text-color);
+  }
+
+  .nav--menu {
+    padding: 12px;
+    display: block;
+  }
+
+  .nav--link {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    gap: 24px;
+  }
+
+  header .nav--menu ul li a {
+    font-weight: normal;
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  .nav--menu .nav--link li:last-child {
+    padding: 4px 14px;
+    color: orange;
+    border: 3px solid var(--secondary);
+  }
+
+  .nav--menu ul li.light a {
+    font-weight: 400;
+    color: var(--secondary);
+    background-color: rgba(228, 218, 209, 0.479);
+    border-radius: 8px;
+  }
+
+  .logo {
+    display: block;
+    justify-self: flex-start;
+    padding: 6px;
+    width: 65px;
+    justify-content: flex-end;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home--section,
+  .about--section {
+    padding: 50px 150px;
+  }
+
+  .main--title h2,
+  .main--header h2 {
+    padding-top: 90px;
+    font-size: 48px;
+  }
+
+  .main--title h1,
+  .main--header h1 {
+    font-size: 60px;
+    line-height: 78px;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+  .card--container {
+    display: flex;
+    text-align: center;
+    animation: 1s ease-out 0s 1 slideInLeft;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .card {
+    width: 220px;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .card:hover {
+    border: 2px solid #fff;
+  }
+
+  .card-img img {
+    width: 90%;
+    height: auto;
+    padding: 12px;
+  }
+
+  .card h3 {
+    width: auto;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .card p {
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .see--div {
+    display: block;
+    padding: 50px;
+  }
+
+  .see--a {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  .feature--container {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 150px;
+    margin: 0 auto;
+    width: 80%;
+    row-gap: 60px;
+  }
+
+  .feature--img {
+    width: 30%;
+    height: auto;
+  }
+
+  .feature--img img {
+    width: 100%;
+  }
+
+  .side-div p {
+    width: 80%;
+  }
+
+  .arrow--btn button {
+    width: 25%;
+  }
+
+  .arrow--btn button:hover {
+    background-color: rgb(243, 221, 213);
+  }
+
+  .client--container {
+    padding-top: 90px;
+    gap: 20px;
+  }
+
+  .client {
+    width: 15%;
+    height: 70px;
+  }
+
+  .client img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer {
+    text-align: center;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  /* About styling */
+
+  .about--description h3 {
+    font-weight: 600;
+  }
+
+  .info {
+    padding-bottom: 40px;
+  }
+
+  .info2 h2,
+  .careers--section h2 {
+    font-size: 28px;
+  }
+
+  .info2 h3 {
+    width: 45%;
+  }
+
+  .main--logo {
+    width: 30%;
+  }
+
+  .main--logo img {
+    width: 70%;
+  }
+
+  .careers--container {
+    flex-direction: row;
+    padding: 50px;
+    width: 50%;
+    margin: 0 auto;
+    gap: 20px;
+    animation: 1s ease-out 0s 1 slideInLeft;
+  }
+
+  .careers {
+    width: 100%;
+  }
+
+  .careers .div:hover {
+    transition: all 1s;
+    display: none;
+  }
+}
