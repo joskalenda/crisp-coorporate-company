@@ -11,6 +11,8 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
+  opacity: 0;
+  transition: opacity 2s;
 }
 
 :root {
@@ -32,16 +34,17 @@ a {
   font-weight: 600;
 }
 
-.header {
+.header,
+.header2 {
   position: fixed;
   width: 100%;
   height: 80px;
   padding: 24px;
   z-index: 4;
-  background: rgb(226, 224, 224);
 }
 
 .header.active {
+  box-shadow: #272a31bd 1px 5px 9px;
   background-color: lightgray;
 }
 
@@ -59,9 +62,37 @@ a {
   width: 100%;
   z-index: 4;
   top: 0;
-  background: #e7e6e6;
+  background: #a2a2a2;
   mix-blend-mode: normal;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  -webkit-animation-name: modal-animation;
+  -webkit-animation-duration: 0.9s;
+  animation-name: modal-animation;
+  animation-duration: 0.9s;
+}
+
+@-webkit-keyframes modal-animation {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes modal-animation {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .scroll {
@@ -76,7 +107,7 @@ a {
 }
 
 .overlay-menu li a {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 44px;
   justify-content: left;
   font-weight: 600;
@@ -104,10 +135,12 @@ a {
   padding: 24px;
   justify-content: center;
   background-color: var(--primary);
-  background-image: linear-gradient(rgba(233, 233, 233, 0.87), rgb(235, 235, 235)), url(/assets/backgrd/home-mobile.jpg);
-  background-position: top center;
-  background-size: cover;
+  background-image: linear-gradient(rgba(233, 233, 233, 0.539), rgba(235, 235, 235, 0.229)), url(/assets/backgrd/home-mobile.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main--title h2 {
@@ -123,7 +156,7 @@ a {
   line-height: 60px;
   font-weight: 800;
   background-image: url(/assets/backgrd/font.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -132,7 +165,7 @@ a {
 .description {
   text-align: left;
   justify-content: center;
-  background-color: #e9e8e8;
+  background-color: #e9e8e8bd;
   border: 3px solid #fff;
 }
 
@@ -144,16 +177,26 @@ a {
   line-height: 30px;
 }
 
+.time--section {
+  background-color: #e9e8e8bd;
+  border: 3px solid #fff;
+  margin-top: 10px;
+}
+
 .time--section h3 {
-  font-size: 24px;
+  padding: 12px;
+  font-size: 18px;
   font-weight: 800;
+  margin: 0;
   color: var(--text-color);
 }
 
 .time--section p,
 .footer p {
-  color: rgb(87, 86, 86);
+  color: rgba(87, 86, 86, 0.639);
   font-size: 16px;
+  padding: 12px;
+  margin: 0;
   font-weight: normal;
 }
 
@@ -243,7 +286,7 @@ a {
   background: var(--secondary);
   border: none;
   color: #d3d3d3;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .feature--section {
@@ -565,24 +608,28 @@ h4,
 
   @keyframes slideInLeft {
     0% {
-      transform: translateX(-100%);
+      transform: translateY(-100%);
+      transition: 10s ease;
     }
 
     100% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
   }
 
   .header {
     display: flex;
     top: 33px;
-    background: rgb(226, 224, 224);
     justify-content: space-evenly;
     text-align: center;
-    animation: 1s ease-out 0s 1 slideInLeft;
+    animation: 2s ease-out 0s 1 slideInLeft;
     padding: 0;
     height: auto;
     margin: 0;
+  }
+
+  .time--section {
+    width: 40%;
   }
 
   .flex-center {
@@ -627,6 +674,8 @@ h4,
 
   .nav--link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     width: 100%;
     gap: 24px;
@@ -647,7 +696,6 @@ h4,
   .nav--menu ul li.light a {
     font-weight: 400;
     color: var(--secondary);
-    background-color: rgba(228, 218, 209, 0.479);
     border-radius: 8px;
   }
 
@@ -664,9 +712,14 @@ h4,
     height: 100%;
   }
 
-  .home--section,
   .about--section {
     padding: 50px 150px;
+  }
+
+  .home--section {
+    background-position: 0;
+    padding: 50px 150px;
+    z-index: -100;
   }
 
   .main--title h2,
@@ -791,6 +844,11 @@ h4,
 
   .about--description h3 {
     font-weight: 600;
+  }
+
+  .header.active {
+    box-shadow: #272a31bd 1px 5px 9px;
+    background-color: lightgray;
   }
 
   .info {
