@@ -218,7 +218,7 @@ a {
 
 .work--section h2::after,
 .client--section h2::after,
-.info2 h2::after,
+.info2 h1::after,
 .careers--section h2::after {
   content: ' ';
   margin: 20px auto;
