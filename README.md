@@ -2,7 +2,7 @@
 
 
 ## Description
-Our experts gather intelligence "from the outside in" across the surface, deep and dark web. We're policy aware, but not policy driven, so we can deliver the early-warning advantage Trust & Safety teams need over the individuals and groups who are planning to spread illegal and harmful content on platforms. Crisp protects the world from online exploitation, lies, threats, abuse and hate. our actor intelligent graph has redefined the way companies indentify and mitigate risks.
+> 
 
 - Page view:
 
@@ -74,9 +74,9 @@ For tracking linter errors locally you need to follow these steps:
 
 👤 **Jos Kalenda**
 
-- [GitHub](https://github.com/joskalenda)
-- [Twitter](https://twitter.com/JosKalenda)
-- [LinkedIn](https://www.linkedin.com/in/jos-kalenda)
+- [GitHub](https://github.com/joskalend)
+- [Twitter](https://twitter.com/JosKalnda)
+- [LinkedIn](https://www.linkedin.coin/jos-kalenda)
 
 
 ## 🤝 Contributing
